@@ -2,20 +2,36 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
+// const skills = [
+//   { name: 'Android', src: '/public/android-original.svg' },
+//   { name: 'Java', src: '/public/java-original.svg' },
+//   { name: 'Kotlin', src: '/public/kotlin-original.svg' },
+//   { name: 'React', src: '/public/react-original.svg' },
+//   { name: 'HTML5', src: '/public/html5-original.svg' },
+//   { name: 'CSS3', src: '/public/css3-original.svg' },
+//   { name: 'JavaScript', src: '/public/javascript-original.svg' },
+//   { name: 'PHP', src: '/public/php-original.svg' },
+//   { name: 'MySQL', src: '/public/mysql-original.svg' },
+//   { name: 'SQLite', src: '/public/sqlite-original.svg' },
+//   { name: 'Android Studio', src: '/public/androidstudio-original.svg' },
+//   { name: 'Git', src: '/public/git-original.svg' },
+//   { name: 'Postman', src: '/public/getpostman-icon.svg' },
+// ];
+
 const skills = [
-  { name: 'Android', src: '/public/android-original.svg' },
-  { name: 'Java', src: '/public/java-original.svg' },
-  { name: 'Kotlin', src: '/public/kotlin-original.svg' },
-  { name: 'React', src: '/public/react-original.svg' },
-  { name: 'HTML5', src: '/public/html5-original.svg' },
-  { name: 'CSS3', src: '/public/css3-original.svg' },
-  { name: 'JavaScript', src: '/public/javascript-original.svg' },
-  { name: 'PHP', src: '/public/php-original.svg' },
-  { name: 'MySQL', src: '/public/mysql-original.svg' },
-  { name: 'SQLite', src: '/public/sqlite-original.svg' },
-  { name: 'Android Studio', src: '/public/androidstudio-original.svg' },
-  { name: 'Git', src: '/public/git-original.svg' },
-  { name: 'Postman', src: '/public/getpostman-icon.svg' },
+  { name: 'Android', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg' },
+  { name: 'Java', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+  { name: 'Kotlin', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' },
+  { name: 'React', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+  { name: 'HTML5', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+  { name: 'CSS3', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+  { name: 'JavaScript', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+  { name: 'PHP', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
+  { name: 'MySQL', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+  { name: 'SQLite', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg' },
+  { name: 'Android Studio', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg' },
+  { name: 'Git', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+  { name: 'Postman', src: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
 ];
 
 const Skills = () => {
